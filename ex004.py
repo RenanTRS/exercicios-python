@@ -14,5 +14,6 @@ print("Somente letras? ", msg.isalpha()) #Verifica se possui letras
 print("Possui letras e números? ", msg.isalnum()) #Verifica se possui letras e números
 print("Maíusculas? ", msg.isupper()) #Verifica se tudo está em maiúsculo
 print("Minúsculas? ", msg.islower()) #Verifica se tudo está em minúsculo
+print("Está capitalizado? ", msg.istitle()) #Verifica se a str está capitalizada
 
 #Fim
