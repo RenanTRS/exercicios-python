@@ -2,10 +2,9 @@
 #Quantas letras ao no total (sem considerar espaços). Quantas letras tem o primeiro nome
 
 #Entrada de dados--------------------------------
-nome = str(input('Digite o seu nome: '))
+nome = str(input('Digite o seu nome: ')).strip() #Função .strip() para remover espaços
 
 #Manipulação de dados-----------------------------
-nome = nome.strip() #Remover espaços
 sepa = nome.split() #Dividindo em lista
 qtd = len(''.join(sepa)) #Juntando os caracteres
 n1 = len(sepa[0]) #Contando o item 0 da lista
