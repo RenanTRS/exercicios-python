@@ -1,0 +1,66 @@
+Manipulando texto
+
+strings são listas
+
+	n = 'renan'
+
+ficarica: [r][e][n][a][n]
+	   0  1  2  3  4
+
+se executar o print
+	print(n[3])
+ficaria: a
+
+se executar print
+	print(n[1:3])
+ficaria: ena
+
+se executar print
+	print(n[:3])
+ficaria: rena (dois pontos sem nada no inicío siginifica que o programa deve começar desde o início, a mesma coisa o inverso, se não houver nada depois do ":" o programa vai até o final)
+
+comando: len(n)
+	Serve para contar os caracteres
+
+comando n.count('a')
+	Serve para contar quantas letras "a" tem na variável
+
+comando n.count('a',0,4)
+	Serve para contar quantas letras "a" tem na variável dentro do espaço de 0 e 4.
+
+comando n.find('ena')
+	Serve para mostar onde fica "ena" na variável
+
+print('ena' in n)
+Se existir "ena" na variável "n" o compilador retorna True
+
+n = n.replace('ena', rex)
+print(n)
+Serve para trocar determinado item por outro.
+
+print(n.upper())
+Serve para deixar todos os caracteres maiúsculos.
+
+print(n.lower())
+Serve para deixar os caracteres em minúsculos
+
+print(n.capitalize())
+Deixa apenas o primeiro caractere em maiúsculo
+
+print(n.title())
+Deixa apenas os caracteres após o espaço em maiúsculo
+
+n.strip()
+Serve para remover os espaços em branco antes e depois dos caracteres
+
+n.rstrip()
+Remove os espaços da direita
+
+n.lstrip()
+Remove os espaços da esquerda
+
+n = n.split()
+Divide a lista em espaços
+
+n = ''.join(n)
+Junta as listas, pode se acrescentar algo nas '' como '-'
