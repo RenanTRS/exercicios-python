@@ -4,6 +4,9 @@
 #Entrada de dados--------------------------------
 nome = str(input('Digite o seu nome: ')).strip() #Função .strip() para remover espaços
 
+while nome == '':
+    nome = str(input('Digite o seu nome: ')).strip()
+
 #Manipulação de dados-----------------------------
 sepa = nome.split() #Dividindo em lista
 qtd = len(''.join(sepa)) #Juntando os caracteres
