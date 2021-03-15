@@ -7,8 +7,8 @@ while cidade == '':
     cidade = str(input('Resposta incorreta, em que ciade você nasceu: ')).strip().lower()
 
 #Manipulação de dados--------------------------------------------------
-city = cidade.split()
+#city = cidade.split()
 
 #Saída de dados---------------------------------------------------------
-print('{} começa com a palavra santo? {}'.format(cidade.title() , 'santo' in city[0]))
+print('{} começa com a palavra Santo? {}'.format(cidade.title() , 'santo' in cidade[:5]))
 #END
