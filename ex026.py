@@ -10,8 +10,8 @@ while frase == '':
 
 #Manipulação de dados---------------------------------------
 qtd = frase.count('a') #Contar a quantidade de "a" na variável "frase"
-l = frase.find('a')
-r = frase.rfind('a')
+l = frase.find('a') + 1
+r = frase.rfind('a') + 1
 
 #Saída de dados---------------------------------------------
 print('Quantas vezes apareceram a letra "A": {}'.format(qtd))
