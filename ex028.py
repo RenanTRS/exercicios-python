@@ -2,9 +2,13 @@
 #descobrir qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu
 
 from random import randint
+from time import sleep
+
 num = randint(0, 5)
 escolha = int(input('Adivinha um número que eu escolhi entre 0 e 5: '))
 
+print('PROCESSANDO...')
+sleep(1)
 if escolha == num:
     print('Acertou miseravi.')
 else:
