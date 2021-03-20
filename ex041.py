@@ -2,7 +2,11 @@
 #sua categoria, de acordo com a idade: Até 9 anos mirim. Até 14 anos infantil. Até 19 anos junior. Até 25 
 #anos sênior. acima master
 
-idade = int(input('Idade do atleta: '))
+from datetime import date
+anoAtual = date.today().year
+
+anonasc = int(input('Ano em que o atleta nasceu: '))
+idade = anoAtual - anonasc
 
 if idade <= 9:
     print('{} anos. Categoria mirim.'.format(idade))
