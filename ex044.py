@@ -22,10 +22,12 @@ elif opc == 3:
 
 elif opc == 4:
     total = valor + ((valor * 20)/100)
-    #nvalor = total
     qtd = int(input('Quantas parcelas: '))
     print('Compra parcelada em {}x de R${:.2f}'.format(qtd, total / qtd))
 
+else:
+    total = 0
+    print('Opção inválida.')
 print('Sua compra de R${:.2f} vai custar R${:.2f}'.format(valor, total))
 
 #END
