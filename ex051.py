@@ -2,9 +2,9 @@
 
 p = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
-f = r * 10
+f = p + (10 - 1)*r #fórmula matemática
 
-for c in range(p, f, r):
+for c in range(p, f+1, r):
     print('{} ->'.format(c), end='')
 
 print('Acabou')
