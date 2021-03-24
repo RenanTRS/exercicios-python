@@ -3,11 +3,12 @@
 frase = str(input('Digite um nome: ')).lower().split()
 frase = ''.join(frase)
 qtd = len(frase)-1
-frase2 = ''
-
+#frase2 = ''
+frase2 = frase[::-1] #Funciona somente com o python.
+'''
 for c in range(qtd, -1, -1):
     frase2 += frase[c]
-
+'''
 if frase2 == frase:
     print('{} é um palíndromo.'.format(frase2))
 else:
