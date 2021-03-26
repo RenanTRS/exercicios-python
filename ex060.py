@@ -5,12 +5,13 @@ fatorial = num
 
 print('{}!'.format(num), end=' ')
 while num > 0:
-    print('{} x '.format(num), end='')
-    if num == 1:
-        fatorial *= num
+    if num > 1:
+        print('{} x '.format(num), end='')
+        fatorial *= num-1
         num -= 1
     else:
-        fatorial *= num-1
+        print('{} = '.format(num), end='')
+        fatorial *= num
         num -= 1
 
 print(fatorial)
