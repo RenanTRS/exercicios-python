@@ -3,6 +3,7 @@
 
 from random import randint
 
+cont = 1
 flag = randint(0, 10)
 num = int(input('Tente advinha um número entre 0 e 10: '))
 
@@ -10,8 +11,14 @@ if num == flag:
     print('\033[1;32mO miserável é um gênio.\033[m')
 else:
     while num != flag:
-        num = int(input('\033[1;31mErrooooou\033[m Tente Novamente: '))
+        cont += 1
+        if num < flag:
+            print('\033[1;31mErrooooou! É mais\033[m')
+        else:
+            print('\033[1;31mErroooooo! É Menos\033[m')
+        num = int(input('Tente Novamente: '))
         if num == flag:
-            print('Acertou Miseravi')
+            print('\033[1;32mAcertou Miseravi\033[m')
+            print('Tentativas: {}'.format(cont))
     
-print('Fim')
+#END
