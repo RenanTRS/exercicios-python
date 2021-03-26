@@ -3,14 +3,13 @@
 
 primeiroTermo = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razao: '))
-cont = 9
+cont = 1
 
-print('{} -> '.format(primeiroTermo), end='')
-while cont >= 1:
-    primeiroTermo += razao
-    if cont == 1:
-        print('{}'.format(primeiroTermo))
-        cont -= 1
-    else:
+while cont <= 10:
+    if cont < 10:
         print('{} -> '.format(primeiroTermo), end='')
-        cont -= 1
+    else:
+        print('{} '.format(primeiroTermo))
+    
+    primeiroTermo += razao
+    cont += 1
