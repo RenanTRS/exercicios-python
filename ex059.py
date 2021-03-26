@@ -32,5 +32,8 @@ while flag == True:
         flag = False
         print('Saíndo....')
         sleep(1)
+    
+    else:
+        print('Escolha inválida.')
 #Fim do laco-----------------------------------------------------------------------------------
 print('Fim')
