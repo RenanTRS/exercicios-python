@@ -2,10 +2,11 @@
 #quais são as suas vogais.
 
 palavras = ('teste', 'python', 'rex', 'mayuko')
-vogais = ('a', 'e', 'i', 'o', 'u')
+#vogais = ('a', 'e', 'i', 'o', 'u')
 for c in palavras:
     print(f'{c.upper()} ', end = ' ')
     for y in c:
-        if y in vogais:
+        if y in 'aáâãeéêiéoóôõu':
+        #if y in vogais:
             print(y, end=' ')
     print('')
