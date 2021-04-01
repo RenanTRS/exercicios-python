@@ -5,12 +5,17 @@ from random import randint
 maior = menor = cont = 0
 
 numeros = (randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9))
+
 for c in numeros:
     if cont == 0:
         maior = menor = c
+        cont +=1
     else:
-        if maior > c:
+        if maior < c:
             maior = c
-        if menor < c:
+        if menor > c:
             menor = c
 
+print(numeros)
+print(f'O maior valor sorteado: {maior}')
+print(f'O menor valor sorteado: {menor}')
