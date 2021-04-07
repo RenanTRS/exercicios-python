@@ -2,8 +2,8 @@
 #(sem usar o sort()). No final, mostre a lista ordenada na tela.
 
 numberList = []
-cont = bigger = smaller = value = 0
 for c in range(0, 5):
+    cont = 0
     value = int(input('Enter a number: '))
     if c == 0 or value > numberList[len(numberList)-1]:
         numberList.append(value)
@@ -11,6 +11,8 @@ for c in range(0, 5):
         while True:
             if value < numberList[cont]:
                 numberList.insert(cont, value)
-            cont += 1
+                break
+            else:
+                cont += 1
 
 print(numberList)
