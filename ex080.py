@@ -5,9 +5,12 @@ numberList = []
 cont = bigger = smaller = value = 0
 for c in range(0, 5):
     value = int(input('Enter a number: '))
-    if cont == 0:
+    if c == 0 or value > numberList[len(numberList)-1]:
         numberList.append(value)
     else:
-        for y in numberList:
-            
-    cont
+        while True:
+            if value < numberList[cont]:
+                numberList.insert(cont, value)
+            cont += 1
+
+print(numberList)
