@@ -7,16 +7,39 @@
 peopleList = []
 person = []
 weight = []
-bigger = smaller = 0
+bigger = []
+smaller = []
+count = 0
 
 #while logic
 while True:
     person.append(str(input('Name: ')).strip().title())
     person.append(float(input('Weight: ')))
     peopleList.append(person[:])
+    
+    if count == 0:
+        bigger = person[:]
+        smaller = person[:]
+    else:
+        if bigger[1] < person[1]:
+            bigger = person[:]
+        elif bigger[1] == person[1]:
+            bigger.append(person[:])
+        if smaller[1] > person[1]:
+            smaller = person[:]
+        elif smaller[1] == person[1]:
+            smaller.append(person[:])
+    
     person.clear()
+    count += 1
+    
+    #flag
     opc = str(input('Do you want to continue [Y/N]: ')).strip().lower()
     if 'n' in opc:
         break
 
+#code exit
 print(peopleList)
+print(len(peopleList))
+print(bigger)
+print(smaller)
