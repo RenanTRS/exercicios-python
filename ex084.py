@@ -37,10 +37,10 @@ print(f'Number of people registered: {len(peopleList)}')
 print(f'The biggest weight was {bigger}kg, Name:', end=' ')
 for c in peopleList:
     if c[1] == bigger:
-        print(c[0], end=' ')
+        print(f'[{c[0]}]', end=' ')
 print('')
 print(f'The lowest weight was: {smaller}kg, Name:', end=' ')
 for p in peopleList:
     if p[1] == smaller:
-        print(p[0], end=' ')
+        print(f'[{p[0]}]', end=' ')
 print('')
