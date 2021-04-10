@@ -6,7 +6,7 @@
 #variables
 peopleList = []
 person = []
-weight = []
+#weight = []
 bigger = []
 smaller = []
 count = 0
@@ -18,28 +18,30 @@ while True:
     peopleList.append(person[:])
     
     if count == 0:
-        bigger = person[:]
-        smaller = person[:]
-    else:
-        if bigger[1] < person[1]:
-            bigger = person[:]
-        elif bigger[1] == person[1]:
-            bigger.append(person[:])
-        if smaller[1] > person[1]:
-            smaller = person[:]
-        elif smaller[1] == person[1]:
-            smaller.append(person[:])
+        bigger.append(person[:])
+        smaller.append(person[:])
     
+    else:
+        if bigger[0][1] < person[1]:
+            bigger = person[:]
+        elif bigger[0][1] == person[1]:
+            bigger.append(person[:])
+        if smaller[0][1] > person[1]:
+            smaller = person[:]
+        elif smaller[0][1] == person[1]:
+            smaller.append(person[:])
+
     person.clear()
     count += 1
-    
+
     #flag
     opc = str(input('Do you want to continue [Y/N]: ')).strip().lower()
     if 'n' in opc:
         break
 
 #code exit
-print(peopleList)
-print(len(peopleList))
+print(f'Number of people regitered: {len(peopleList)}')
+#print(f'The biggest weight was {bigger[0][1]}kg, Name: {bigger[0][0]}')
 print(bigger)
+#print(f'The lowest weight was: {smaller[0][1]}kg, Name: {smaller[0][0]}')
 print(smaller)
