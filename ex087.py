@@ -5,7 +5,7 @@
 
 #variables
 blocks = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-pair = sColumn = 0
+pair = sColumn = bigger = 0
 
 #for logic
 for l in range(0, 3):
@@ -16,9 +16,15 @@ for l in range(0, 3):
         if c == 2:
             #print('3')
             sColumn += blocks[l][c] #sum of third column
+        if l == 1:
+            if c == 0:
+                bigger = blocks[l][c]
+            else:
+                if bigger < blocks[l][c]:
+                    bigger = blocks[l][c]
 
 
 print(blocks)
 print(pair)
 print(sColumn)
-
+print(bigger)
