@@ -8,4 +8,6 @@ for c in range(0, 3):
         blocks[c][y] = int(input(f'Enter a number for [{c}, {y}]: '))
         
 for x in blocks:
-    print(x)
+    for z in x:
+        print(f'[ {z} ]', end='')
+    print('')
