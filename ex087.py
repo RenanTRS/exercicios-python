@@ -11,20 +11,28 @@ pair = sColumn = bigger = 0
 for l in range(0, 3):
     for c in range(0, 3):
         blocks[l][c] =  int(input(f'Enter a number for [{l}, {c}]: '))
+
         if blocks[l][c] % 2 == 0:
             pair += blocks[l][c]
+        
         if c == 2:
-            #print('3')
             sColumn += blocks[l][c] #sum of third column
+        
         if l == 1:
             if c == 0:
                 bigger = blocks[l][c]
+        
             else:
                 if bigger < blocks[l][c]:
                     bigger = blocks[l][c]
 
+#code exit
+print('='*22)
+for s in blocks:
+    for b in s:
+        print(f'[{b:^5}]', end='')
+    print()#line break
 
-print(blocks)
-print(pair)
-print(sColumn)
-print(bigger)
+print(f'Sum of even values: {pair}')
+print(f'Sum of third column: {sColumn}')
+print(f'The bigger of the second row: {bigger}')
