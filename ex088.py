@@ -16,5 +16,7 @@ for c in range(0, game):
             if number not in numberList:
                 numberList.append(number)
                 break
+    
     numberList.sort()
     print(numberList)
+    numberList.clear()
