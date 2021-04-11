@@ -4,19 +4,25 @@
 #library
 from random import randint
 
+#variables
 game = int(input('How many games do you want? '))
+numbers = []
 numberList = []
 count = 0
-
+#for logic
 for c in range(0, game):
-    print(f'Game {c+1}: ', end='')
     for n in range(0, 6):
+        #while logic
         while True:
             number = randint(1, 60)
-            if number not in numberList:
-                numberList.append(number)
+            if number not in numbers:
+                numbers.append(number)
                 break
-    
-    numberList.sort()
-    print(numberList)
-    numberList.clear()
+    #data manipulation
+    numbers.sort()
+    numberList.append(numbers[:])
+    numbers.clear()
+#code exit
+#print(numberList)
+for pos, g in enumerate(numberList):
+    print(f'Game {pos+1}: {g}')
