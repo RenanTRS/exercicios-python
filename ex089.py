@@ -8,10 +8,13 @@ student = []
 #while logic
 while True:
     student.append(str(input('Name: ')).strip().title())
-    grade1 = float(input('Grade 1: '))
-    grade2 = float(input('Grade 2: '))
+    student.append(float(input('Grade 1: ')))
+    student.append(float(input('Grade 2: ')))
+    studentsList.append(student[:])
+    student.clear()
+    #flag
     opc = str(input('Do you want to continue [Y/N]: ')).strip().lower()
     if 'n' in opc:
         break
 
-    
+print(studentsList)
