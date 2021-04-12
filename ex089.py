@@ -7,7 +7,7 @@ student = []
 
 #while logic
 while True:
-    student.append(str(input('Name: ')).strip().title())
+    student.append(str(input('Name: ')).strip().title()[0])
     student.append(float(input('Grade 1: ')))
     student.append(float(input('Grade 2: ')))
     studentsList.append(student[:])
@@ -16,5 +16,9 @@ while True:
     opc = str(input('Do you want to continue [Y/N]: ')).strip().lower()
     if 'n' in opc:
         break
+print('==' * 20)
+print('Nº Name   Grade Point')
+for pos, c in enumerate(studentsList):
+    print(f'{pos} {c[0]:>6} {(c[1]+c[2])/2:>8}')
 
-print(studentsList)
+#print(studentsList)
