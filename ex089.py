@@ -5,3 +5,6 @@
 studentsList = []
 student = []
 
+name = str(input('Name: ')).strip().title()
+grade1 = float(input('Grade 1: '))
+grade2 = float(input('Grade 2: '))
