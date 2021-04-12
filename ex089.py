@@ -5,6 +5,13 @@
 studentsList = []
 student = []
 
-name = str(input('Name: ')).strip().title()
-grade1 = float(input('Grade 1: '))
-grade2 = float(input('Grade 2: '))
+#while logic
+while True:
+    student.append(str(input('Name: ')).strip().title())
+    grade1 = float(input('Grade 1: '))
+    grade2 = float(input('Grade 2: '))
+    opc = str(input('Do you want to continue [Y/N]: ')).strip().lower()
+    if 'n' in opc:
+        break
+
+    
