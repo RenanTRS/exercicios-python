@@ -33,4 +33,8 @@ for c in range(0, 3):
     estado['uf'] = str(input('Unidade Federativa: '))
     estado['silga'] = str(input('Siglas do Estado: '))
     brasil.append(estado.copy()) #serve para fazer cópias, igual ao [:] das listas.
-print(brasil)
+
+for e in brasil:
+    for v in e.items():
+        print(v)
+#print(brasil)
