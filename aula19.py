@@ -12,5 +12,6 @@ for k, v in pessoas.items(): #Forma de usar o for para pegar tanto às chaves co
 del pessoas['sexo'] #apaga a key e o value
 print('Depois do del')
 pessoas['nome'] = 'Rex' #troca de value
+pessoas['peso'] = 62.0 #é possível adicionar novas keys
 for k, v in pessoas.items():
     print(k, v)
