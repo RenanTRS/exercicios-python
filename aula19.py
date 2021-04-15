@@ -9,3 +9,7 @@ pessoas = {'nome': 'Renan', 'sexo': 'M', 'idade': 24}#Declarando dicionário
 for k, v in pessoas.items(): #Forma de usar o for para pegar tanto às chaves como os valores
     print(k, v)
     
+del pessoas['sexo'] #apaga a key e o value
+print('Depois do del')
+for k, v in pessoas.items():
+    print(k, v)
