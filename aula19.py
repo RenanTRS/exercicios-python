@@ -1,3 +1,4 @@
+'''
 pessoas = {'nome': 'Renan', 'sexo': 'M', 'idade': 24}#Declarando dicionário
 #print(pessoas)
 #print(pessoas['nome'])
@@ -15,3 +16,12 @@ pessoas['nome'] = 'Rex' #troca de value
 pessoas['peso'] = 62.0 #é possível adicionar novas keys
 for k, v in pessoas.items():
     print(k, v)
+'''
+brasil = []
+estado1 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+estado2 = {'uf': 'São Paulo', 'sigla': 'SP'}
+
+brasil.append(estado1)
+brasil.append(estado2)
+print(brasil)
+print(brasil[0]['uf'])
