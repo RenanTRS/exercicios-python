@@ -4,4 +4,8 @@
 student = {}
 student['nome'] = str(input("Student's name: ")).strip().title().split()[0]
 student['average'] = float(input("Student's average: "))
+
+#if logic
+if student['average'] == 5:
+    print('cinco')
 print(student)
