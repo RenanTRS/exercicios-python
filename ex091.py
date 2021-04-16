@@ -4,6 +4,18 @@
 #library
 from random import randint
 
+#variable
+rank = []
 #for logic
 for c in range(0, 4):
-    print(randint(1, 6))
+    number = randint(1, 6)
+    print(number)
+    #if logic
+    if c == 0:
+        rank.append(number)
+    else:
+        for pos, i in enumerate(rank):
+            if i < number:
+                rank.insert(pos, number)
+
+print(rank)
