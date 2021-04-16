@@ -5,17 +5,6 @@
 from random import randint
 
 #variable
-rank = []
-#for logic
-for c in range(0, 4):
-    number = randint(1, 6)
-    print(number)
-    #if logic
-    if c == 0:
-        rank.append(number)
-    else:
-        for pos, i in enumerate(rank):
-            if i < number:
-                rank.insert(pos, number)
-
-print(rank)
+rank = {}
+game = {'player1': randint(1, 6), 'player2': randint(1, 6), 'player3': randint(1, 6), 'player4': randint(1, 6)}
+print(game)
