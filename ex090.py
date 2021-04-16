@@ -14,3 +14,5 @@ else:
 #for logic
 for k, v in student.items():
     print(f'{k} is equal to {v}')
+
+#End
