@@ -6,6 +6,11 @@ student['nome'] = str(input("Student's name: ")).strip().title().split()[0]
 student['average'] = float(input("Student's average: "))
 
 #if logic
-if student['average'] == 5:
-    print('cinco')
-print(student)
+if student['average'] <= 5:
+    student['situation'] = 'Disapproved'
+else:
+    student['situation'] = 'Approved'
+
+#for logic
+for k, v in student.items():
+    print(f'{k} is equal to {v}')
