@@ -6,4 +6,7 @@
 register = {}
 
 name = str(input('Name: ')).strip().title().split()[0]
+year = int(input('Year of Birth: '))
+
 print(name)
+print(year)
