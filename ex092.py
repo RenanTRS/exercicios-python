@@ -23,7 +23,15 @@ if workCard != 0:
     register['yearHiring'] = yearHiring
     pay = float(input('Pay: $'))
     register['pay'] = pay
+    retirement = yearHiring - year
+    retirement += 35
+    register['retirement'] = retirement
 
 #Code exit
-print(register)
+print('==' * 20)
+
+#for logic
+for k, v in register.items():
+    print(f'The {k} is {v}')
+
 #End
