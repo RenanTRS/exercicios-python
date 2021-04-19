@@ -7,6 +7,8 @@ register = {}
 
 name = str(input('Name: ')).strip().title().split()[0]
 year = int(input('Year of Birth: '))
-
+workCard = int(input('Work permit: '))
 print(name)
 print(year)
+print(workCard)
+
