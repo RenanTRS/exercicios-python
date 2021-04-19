@@ -15,7 +15,7 @@ age = currentYear - year
 workCard = int(input('Work permit: '))
 #if logic
 if workCard != 0:
-    print('test')
+    pay = float(input('Pay: $'))
 
 print(name)
 print(year)
