@@ -10,17 +10,20 @@ register = {}
 currentYear = date.today().year
 
 name = str(input('Name: ')).strip().title().split()[0]
+register['name'] = name
 year = int(input('Year of Birth: '))
 age = currentYear - year
+register['age'] = age
 workCard = int(input('Work permit: '))
+register['workCard'] = workCard
+
 #if logic
 if workCard != 0:
     yearHiring = int(input('Year of Hiring: '))
+    register['yearHiring'] = yearHiring
     pay = float(input('Pay: $'))
+    register['pay'] = pay
 
-print(name)
-print(year)
-print(workCard)
-print(age)
-print(yearHiring)
-print(pay)
+#Code exit
+print(register)
+#End
