@@ -7,25 +7,19 @@ from datetime import date
 
 #variables
 register = {}
-currentYear = date.today().year
+#currentYear = date.today().year
 
-name = str(input('Name: ')).strip().title().split()[0]
-register['name'] = name
+register['name'] = str(input('Name: ')).strip().title().split()[0]
 year = int(input('Year of Birth: '))
-age = currentYear - year
-register['age'] = age
-workCard = int(input('Work permit: '))
-register['workCard'] = workCard
+register['age'] = date.today().year - year
+register['workCard'] = int(input('Work permit: '))
 
 #if logic
-if workCard != 0:
-    yearHiring = int(input('Year of Hiring: '))
-    register['yearHiring'] = yearHiring
-    pay = float(input('Pay: $'))
-    register['pay'] = pay
-    retirement = yearHiring - year
-    retirement += 35
-    register['retirement'] = retirement
+if register['workCard'] != 0:
+    register['yearHiring'] = int(input('Year of Hiring: '))
+    register['pay'] = float(input('Pay: $'))
+    retirement = register['yearHiring'] - year
+    register['retirement'] = retirement + 35
 
 #Code exit
 print('==' * 20)
