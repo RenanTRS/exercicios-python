@@ -4,6 +4,7 @@
 
 #library
 from datetime import date
+
 #variables
 register = {}
 currentYear = date.today().year
@@ -12,6 +13,9 @@ name = str(input('Name: ')).strip().title().split()[0]
 year = int(input('Year of Birth: '))
 age = currentYear - year
 workCard = int(input('Work permit: '))
+#if logic
+if workCard != 0:
+    print('test')
 
 print(name)
 print(year)
