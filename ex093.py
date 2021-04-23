@@ -30,5 +30,11 @@ equals()
 #for exit logic
 for k, v in player.items():
     print(f'The {k} field has a value of {v}.')
-
 equals()
+
+print(f'The player {player["name"]} played {qtd} matches.')
+#for exit logic
+for pos, c in enumerate(goals):
+    print(f' => In matches {pos+1}, he scored {c} goals.')
+print(f'Total: {total} goals.')
+#End
