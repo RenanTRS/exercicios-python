@@ -34,7 +34,7 @@ equals()
 
 print(f'The player {player["name"]} played {qtd} matches.')
 #for exit logic
-for pos, c in enumerate(goals):
+for pos, c in enumerate(player['goals']):
     print(f' => In matches {pos+1}, he scored {c} goals.')
-print(f'Total: {total} goals.')
+print(f'Total: {player["total"]} goals.')
 #End
