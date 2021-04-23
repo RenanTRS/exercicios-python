@@ -3,7 +3,15 @@
 #incluindo o total de gols feitos durante o campeonato.
 
 player = {}
+goals = []
+
 player['name'] = str(input('Name: ')).strip().title().split()[0]
-player['qtd'] = int(input(f"How many matches did {player['name']} play: "))
-print(player['name'])
-print(player['qtd'])
+player['qtd'] = int(input(f"How many matches {player['name']} played: "))
+#print(player['name'])
+#print(player['qtd'])
+
+#for logic
+for c in range(0, player['qtd']):
+    goals.append(str(input(f'How many goals in game {c+1}: ')))
+
+print(goals)
