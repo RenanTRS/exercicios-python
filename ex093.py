@@ -4,14 +4,18 @@
 
 player = {}
 goals = []
+total = 0
 
+#inputs
 player['name'] = str(input('Name: ')).strip().title().split()[0]
-player['qtd'] = int(input(f"How many matches {player['name']} played: "))
-#print(player['name'])
-#print(player['qtd'])
+qtd = int(input(f"How many matches {player['name']} played: "))
 
 #for logic
-for c in range(0, player['qtd']):
-    goals.append(str(input(f'How many goals in game {c+1}: ')))
+for c in range(0, qtd):
+    goals.append(int(input(f'How many goals in game {c+1}: ')))
+    total += goals[c]
 
-print(goals)
+#code exit
+player['goals'] = goals[:]
+player['total'] = total
+print(player)
