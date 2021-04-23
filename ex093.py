@@ -15,7 +15,14 @@ for c in range(0, qtd):
     goals.append(int(input(f'How many goals in game {c+1}: ')))
     total += goals[c]
 
-#code exit
 player['goals'] = goals[:]
 player['total'] = total
+
+#code exit
+print('==' * 20)
 print(player)
+print('==' * 20)
+
+#for logic exit
+for k, v in player.items():
+    print(f'The {k} field has a value of {v}.')
