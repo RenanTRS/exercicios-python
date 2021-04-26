@@ -10,24 +10,24 @@ def averageAge(a, b):
 
 person = {}
 people = []
-count = age = 0
+age = 0
 
 #while logic
 while True:
     #inputs
     person['name'] = str(input('Name: ')).strip().title().split()[0]
     person['sex'] = str(input('Sex [M/F]: ')).strip().upper().split()[0]
-    #if logic
+    #if error logic
     if person['sex'] != 'M' and person['sex'] != 'F':
         #while logic
         while True:
             person['sex'] = str(input('Error, just input M or F: ')).strip().upper().split()[0]
             if person['sex'] == 'M' or person['sex'] == 'F':
                 break
+
     person['age'] = int(input('Age: '))
     
     age += person['age']
-    count += 1
     people.append(person.copy()) #copy to list
     
     #flag
@@ -37,4 +37,11 @@ while True:
 
 #exit    
 print(people)
-print(f'{averageAge(age, count):.1f}')
+print(f'{averageAge(age, len(people)):.1f}')
+print(f'Registered women:', end=' ')
+for c in people:
+    if c['sex'] == 'F':
+        print(c['name'], end=' ')
+print()#line break
+
+    
