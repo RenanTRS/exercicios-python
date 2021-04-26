@@ -4,9 +4,12 @@
 #B) A média de idade
 #C) Uma lista com as mulheres
 #D) Uma lista de pessoas com idade acima da média
-def averageAge(a, b):
-    average = a / b
-    return average
+def average(a, b):
+    averageAge = a / b
+    return averageAge
+
+def lineBreak():
+    print()
 
 person = {}
 people = []
@@ -37,11 +40,19 @@ while True:
 
 #exit    
 print(people)
-print(f'{averageAge(age, len(people)):.1f}')
+averageAge = average(age, len(people))
+print(f'{averageAge:.1f}')
 print(f'Registered women:', end=' ')
 for c in people:
     if c['sex'] == 'F':
         print(c['name'], end=' ')
-print()#line break
+lineBreak()
+
+print('Above average people:', end=' ')
+for c in people:
+    if c['age'] > averageAge:
+        print(c['name'], end=' ')
+lineBreak()
+
 
     
