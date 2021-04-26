@@ -4,6 +4,8 @@
 #B) A média de idade
 #C) Uma lista com as mulheres
 #D) Uma lista de pessoas com idade acima da média
+
+#functions
 def average(a, b):
     averageAge = a / b
     return averageAge
@@ -11,6 +13,7 @@ def average(a, b):
 def lineBreak():
     print()
 
+#variables
 person = {}
 people = []
 age = 0
@@ -53,6 +56,3 @@ for c in people:
     if c['age'] > averageAge:
         print(c['name'], end=' ')
 lineBreak()
-
-
-    
