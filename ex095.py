@@ -4,7 +4,11 @@
 #Functions-------------------
 def equals():
     print('=='*30)
-
+def trace():
+    print('-'*30)
+def breakLine():
+    print('')
+    
 #Inputs----------------------
 player = {}
 players = []
