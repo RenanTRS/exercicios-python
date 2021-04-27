@@ -7,6 +7,7 @@ def equals():
 
 #Inputs----------------------
 player = {}
+players = []
 goals = []
 totalGoals = 0
 
@@ -14,10 +15,15 @@ player['name'] = str(input('Name: ')).strip().title().split()[0]
 qtd = int(input(f'How many matches {player["name"]} played: '))
 
 #for logic-------------------
-for c in range(0 < qtd):
+for c in range(0, qtd):
+    #print(c)
     goals.append(int(input(f'How many goals in game {c+1}: ')))
     totalGoals += goals[c]
 
 #----------------------------
 player['goals'] = goals[:]
 player['total'] = totalGoals
+players.append(player.copy())
+
+#exit------------------------
+print(players)
