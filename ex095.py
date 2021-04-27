@@ -13,12 +13,12 @@ def breakLine():
 player = {}
 players = []
 goals = []
-totalGoals = 0
 
 #while logic-----------------
 while True:
     player['name'] = str(input('Name: ')).strip().title().split()[0]
     qtd = int(input(f'How many matches {player["name"]} played: '))
+    totalGoals = 0
 
     #for logic-------------------
     for c in range(0, qtd):
@@ -28,6 +28,7 @@ while True:
 
     #----------------------------
     player['goals'] = goals[:]
+    goals.clear()
     player['total'] = totalGoals
     players.append(player.copy())
     
@@ -38,4 +39,21 @@ while True:
         break
 
 #exit------------------------
-print(players)
+equals()
+
+#For logic-------------------
+trace()
+for pos, c in enumerate(players):
+    print(f'{pos:<3}{c["name"]:<10} {c["goals"]} {c["total"]:>3}')
+
+trace()
+#while logic-----------------
+while True:
+    opt = int(input("Show which player's data: (999 to cancel) "))
+    if opt == 999:
+        break
+    elif opt >= len(players):
+        print(f'Error, there is no exist player {opt}')
+    else:
+        for c in players[opt]:
+            print(c[opt])
