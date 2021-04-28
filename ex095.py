@@ -40,13 +40,20 @@ while True:
 
 #exit------------------------
 equals()
+print('cod ', end='')
+#for logic-------------------
+for i in player.keys():
+    print(f'{i:<15}',end='')
+breakLine()
 
 #For logic-------------------
-trace()
 for pos, c in enumerate(players):
-    print(f'{pos:<3}{c["name"]:<10} {c["goals"]} {c["total"]:>3}')
-
+    print(f'{pos:>4}',end='')
+    for d in c.values():
+        print(f'{str(d):<15}', end='')
+    breakLine()
 trace()
+
 #while logic-----------------
 while True:
     opt = int(input("Show which player's data: (999 to cancel) "))
@@ -55,5 +62,7 @@ while True:
     elif opt >= len(players):
         print(f'Error, there is no exist player {opt}')
     else:
-        for c in players[opt]:
-            print(c[opt])
+        print(f'Player: {players[opt]["name"]}')
+        for pos, p in enumerate(players[opt]["goals"]):
+            print(f'In matches {pos+1}, he scored {p} goals.')
+    trace()
