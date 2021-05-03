@@ -4,7 +4,7 @@
 def showMe(txt):
     width = len(txt)+4
     print('~'*width)
-    print(f'{txt.center(width)}')
+    print(f'{txt.center(width)}') #.center() biblioteca padrão pra alinhar strings
     print('~'*width)
 
 showMe('Renan')
