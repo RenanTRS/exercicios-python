@@ -4,7 +4,7 @@
 import moeda2
 
 num = float(input('Digite o preço R$'))
-moeda2.metade(num)
-moeda2.dobro(num)
-moeda2.aumentar(num)
+print(f'A metade de R${moeda2.formatar(num)} é R${moeda2.formatar(moeda2.metade(num))}')
+print(f'O dobro de R${moeda2.formatar(num)} é R${moeda2.formatar(moeda2.dobro(num))}')
+print(f'10% de R${moeda2.formatar(num)} é R${moeda2.formatar(moeda2.aumentar(num))}')
 
