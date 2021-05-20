@@ -1,12 +1,14 @@
 def aumentar(num):
     valor = (num * 10) / 100
-    return valor + num
+    return formatar(valor+num)
 
 def dobro(num):
-    return num * 2
+    valor = num * 2
+    return formatar(valor)
 
 def metade(num):
-    return num / 2
+    valor = num / 2
+    return formatar(valor)
 
 def formatar(preco):
     return f'{preco:.2f}'.replace('.', ',')
