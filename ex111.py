@@ -4,4 +4,4 @@
 from utilidadesCev import moeda
 
 num = float(input('Digite um valor R$'))
-moeda.resumo(num, 0 ,0)
+moeda.resumo(num, 10, 10)
