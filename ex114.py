@@ -11,3 +11,4 @@ except urllib.error.URLError: #urllib.error.URLError é o nome do erro
 else:
 #   Caso não dê erro
     print('O site está disponível.')
+#   print(site.read()) #Mostra o html do site
