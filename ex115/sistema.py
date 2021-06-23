@@ -12,9 +12,9 @@ while True:
         sleep(.5)
     elif opc == 3: #flag
         cabecalho('Saindo do sistema, até logo!')
-        sleep(.5)
+        sleep(1)
         break
     else:
         print(f'\033[1;31mErro: Digite uma opção válida.\033[m')
-        sleep(.5)
+        sleep(1)
         
