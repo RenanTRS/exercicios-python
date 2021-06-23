@@ -20,12 +20,17 @@ while True:
     
     else:
         if opc == 3: #flag
-            print(f'Saindo do sistema')
+            menu('Saindo do sistema, até logo!')
+            sleep(.5)
             break
+
         else:
             if opc == 1:
                 menu('Opção 1')
-                sleep(1)
+                sleep(.5)
             elif opc == 2:
                 menu('Opção 2')
-                sleep(1)
+                sleep(.5)
+            else:
+                print(f'\033[1;31mErro: Digite uma opção válida.\033[m')
+                sleep(.5)
