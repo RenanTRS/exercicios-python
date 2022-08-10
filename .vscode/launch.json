@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Aula07",
+            "request": "launch",
+            "mainClass": "Aula07",
+            "projectName": "exercicios-python-cev_3ccbc9c"
+        },
+        {
+            "type": "java",
             "name": "Launch Aula06",
             "request": "launch",
             "mainClass": "Aula06",

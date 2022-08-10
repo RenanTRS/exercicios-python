@@ -1,5 +1,3 @@
-#aula 07 - Operadores Aritméticos
-
 #Renan Souza - 08/03/2021
 #Entrada de dados
 n1 = int(input('Digite um número: '))
