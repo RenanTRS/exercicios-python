@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Aula06",
+            "request": "launch",
+            "mainClass": "Aula06",
+            "projectName": "exercicios-python-cev_3ccbc9c"
+        },
+        {
             "name": "Python: Arquivo Atual",
             "type": "python",
             "request": "launch",

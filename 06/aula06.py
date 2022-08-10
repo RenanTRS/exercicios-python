@@ -1,4 +1,3 @@
-#Aula 06 - Tipos primitivos
 #Renan Souza - 08/03/2021
 
 #Entrada de dados
